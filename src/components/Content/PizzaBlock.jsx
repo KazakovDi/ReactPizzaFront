@@ -35,7 +35,7 @@ const PizzaBlock = ({title, imageUrl, sizes, types, price, id})=> {
         )}
         <img
           className="pizza-block__image"
-          src={`http://localhost:5000${imageUrl}`}
+          src={`${process.env.REACT_APP_API_URL}${imageUrl}`}
           alt="Pizza"
         />
         <h4 className="pizza-block__title">{title}</h4>

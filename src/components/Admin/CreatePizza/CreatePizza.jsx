@@ -102,9 +102,9 @@ const CreatePizza = () => {
                 {errors?.imageUrl && <p>{errors?.imageUrl?.message || "Фоточку загрузи"}</p>}
             </div>
             {imageUrl ? (
-                <img className={styles.preview} src={`http://localhost:5000${imageUrl}`} alt="Uploaded" />
+                <img className={styles.preview} src={`${process.env.REACT_APP_API_URL}${imageUrl}`} alt="Uploaded" />
             ) : isEditing ? 
-                <img  src={`http://localhost:5000${data.imageUrl}`} alt="Uploaded" />
+                <img  src={`${process.env.REACT_APP_API_URL}${data.imageUrl}`} alt="Uploaded" />
               : (<div></div>)}
             <input
             placeholder='Название пиццы'

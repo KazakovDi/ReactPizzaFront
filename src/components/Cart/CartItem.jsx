@@ -9,7 +9,7 @@ import { addItem, minusCount, removeItem } from "../../redux/slices/cartSlice";
         <div className="cart__item-img">
         <img
         className="pizza-block__image"
-        src={`http://localhost:5000${imageUrl}`}
+        src={`${process.env.REACT_APP_API_URL}${imageUrl}`}
         alt="Pizza"
         />
     </div>

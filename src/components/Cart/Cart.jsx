@@ -17,7 +17,7 @@ const Cart = ()=> {
         parse_mode: "html",
         text: values.name + "   " +  values.tel + `\n` + string.join("\n") + `\n Сумма заказа: ${totalPrice}`
       })
-      const {data} = await axios.post("http://localhost:5000/checkout", pizzas)
+      const {data} = await axios.post(`${process.env.REACT_APP_API_URL}/checkout`, pizzas)
       window.location = data.url
     }
     const onSubmitHandler = values=> {
