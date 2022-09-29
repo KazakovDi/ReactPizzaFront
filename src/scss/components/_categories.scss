@@ -1,0 +1,53 @@
+@import '../variables';
+
+$small: 300px;
+$semi-medium: 750px;
+$medium: 900px;
+$large: 1300px;
+
+.categories {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: $large) {
+      max-width: 530px;
+    }
+    @media screen and (max-width: $semi-medium) {
+      flex-direction: column;
+    }
+    li {
+      background-color: #e6e6e6;
+      padding: 13px 30px;
+      border-radius: 30px;
+      margin-right: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      @include noselect();
+
+      &:hover {
+        background-color: darken(#f9f9f9, 2%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &.active {
+        background-color: #282828;
+        color: #fff;
+      }
+      @media screen and (max-width: $large) {
+        margin-bottom: 20px;
+        min-width: 30%;
+      }
+      @media screen and (max-width: $medium) {
+        margin-bottom: 20px;
+        min-width: 40%;
+      }
+      
+    }
+    
+  }
+}

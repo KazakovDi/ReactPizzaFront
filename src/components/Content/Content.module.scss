@@ -1,0 +1,18 @@
+.errorContainer {
+    h1 {
+       color:crimson ;
+    }
+    h2 {
+        color:crimson ;
+        margin-left: 25px
+    }
+}
+.content__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    @media screen and (max-width: 800px) {
+        justify-content: center;
+      }
+}

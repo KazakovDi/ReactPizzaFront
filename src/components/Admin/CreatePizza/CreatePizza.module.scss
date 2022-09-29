@@ -1,0 +1,64 @@
+
+.error_block {
+    p {
+        color:red;
+        font-size: 18px;
+    }
+    
+}
+.form {
+    position: relative;
+    button {
+        color:rgb(122, 122, 255);
+        border: 1px solid rgb(122, 122, 255);
+        width: 240px;
+        padding: 15px 10px;
+        border-radius: 15px;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+    .reset_image {
+        color:red;
+        border: 1px solid red;
+    }
+    .preview {
+        margin: 15px 0;
+        width: 240px;
+    }
+    * {
+        font-size: 18px;
+    }
+    select {
+        outline: none;
+        border: 1px solid #cecece;
+        padding: 15px 10px;
+        border-radius: 15px;
+        width: 240px;
+    }
+    .checkbox_block {
+        display: inline-flex;
+        align-items: center;
+    }
+    .rating {
+        width: 240px;
+    }
+    input[type="checkbox"] {
+        margin-left: 10px;
+    }
+}
+.success {
+    position: absolute;
+    color:rgb(14, 168, 14);
+    top: 10px;
+    right: 30%;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.error {
+    font-size: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
