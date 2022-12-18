@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const instance = axios.create({
-    baseURL: "https://reactpizzav1.herokuapp.com"
+    baseURL: "https://react-pizza-m8ct.onrender.com"
 })
 
 instance.interceptors.request.use(config => {
