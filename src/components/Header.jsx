@@ -25,6 +25,7 @@ const Header = ()=> {
   }
     return(
         <div className="header">
+      <div className="container">Этот пэт проект залит на бесплатный хостинг. Отсутсвующие фотографии в постах и долгая загрузка при первом рендере — особенности работы хостинга. На сайте реализованы функции добавления пицц и подтверждения заказа; Сортировка пицц по категориям и названию; Авторизация в админ панель по адрессу /admin/auth и управления пиццами"</div>
         <div className="container">
         {!isAuth && !location.pathname.includes("admin") && (
           <div className="header__logo">
