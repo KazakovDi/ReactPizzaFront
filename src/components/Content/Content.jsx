@@ -19,9 +19,6 @@ const Content = ()=> {
   const isLoadingPizzas = status === "loading"
   const {results, numberOfPages} = pizzas
   React.useEffect(()=> {
-    alert("Этот пэт проект залит на бесплатный хостинг. Отсутсвующие фотографии в постах и долгая загрузка при первом рендере — особенности работы хостинга. На сайте реализованы функции добавления пицц и подтверждения заказа; Сортировка пицц по категориям и названию; Авторизация в админ панель по адрессу /admin/auth и управления пиццами")
-  }, [])
-  React.useEffect(()=> {
       const params = {
         categoryId,
         sortProperty: sort.sortProperty,
